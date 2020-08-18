@@ -1,0 +1,37 @@
+{
+    "configurations": [
+    {
+        "name": "Development",
+        "type": "dart",
+        "request": "launch",
+        "program": "lib/main.dart",
+        "args": [
+            "--dart-define=DART_DEFINE_APP_NAME=(dev) Sample App",
+            "--dart-define=DART_DEFINE_APP_ID_SUFFIX=.dev",
+            "--dart-define=DART_DEFINE_API_HOST=sample.app.dev",            
+        ]
+    },
+    {
+        "name": "Staging",
+        "type": "dart",
+        "request": "launch",
+        "program": "lib/main.dart",
+        "args": [
+            "--dart-define=DART_DEFINE_APP_NAME=(stg) Sample App",
+            "--dart-define=DART_DEFINE_APP_ID_SUFFIX=.stg",
+            "--dart-define=DART_DEFINE_API_HOST=sample.app.stg",            
+        ]
+    },
+    {
+        "name": "Release",
+        "type": "dart",
+        "request": "launch",
+        "program": "lib/main.dart",
+        "args": [
+            "--dart-define=DART_DEFINE_APP_NAME=Sample App",
+            "--dart-define=DART_DEFINE_APP_ID_SUFFIX=",
+            "--dart-define=DART_DEFINE_API_HOST=sample.app",            
+        ]
+    }
+    ]
+}
